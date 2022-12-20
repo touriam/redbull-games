@@ -58,7 +58,7 @@ a:hover{
     grid-template-rows: auto;
     margin-top: 10px;
     box-shadow: 2px 1px 2px 1px  rgb(206, 167, 120);
-    
+    transition: 1s ease;
 }
 .game{
     height: 30%;
@@ -92,17 +92,19 @@ a:hover{
     position: relative;
     
 }
- .flower{
-   background-image: url("https://www.freeiconspng.com/thumbs/sunflower-png/sunflower-png-12.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 200px;
-   height: 200px;
-   position: absolute;
-   bottom: 150px;
-   left: 250px;
- }   
-
+.flower{
+background-image: url("https://www.freeiconspng.com/thumbs/sunflower-png/sunflower-png-12.png");
+background-repeat: no-repeat;
+background-size: cover;
+width: 200px;
+height: 200px;
+position: absolute;
+bottom: 150px;
+left: 250px;
+}   
+#container:hover{
+    transform: scale(1.02);
+}
 /* media queries*/
 
 @media screen and (max-width: 800px){
