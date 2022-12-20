@@ -13,9 +13,6 @@ body{
     list-style: none;
     justify-content: space-around;
     background-color: rgb(223, 192, 154);
-    /* border: solid;
-    border-color: #a844b5;
-    border-radius: 5px; */
 }
 
 .nav-item{
@@ -47,25 +44,44 @@ a:hover{
 }
 .boss-container{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 #container{
     display: grid;
     height: 500px;
     width: 700px;
+    background-color: rgb(223, 192, 154);
     border: solid;
     border-color:#a844b5;
     grid-template-columns: repeat(1fr 300px);
     grid-template-rows: auto;
     margin-top: 10px;
-    position: sticky;
+    box-shadow: 2px 1px 2px 1px  rgb(206, 167, 120);
+    
 }
 .game{
- height: 30%;
- width: 30%;
+    height: 30%;
+    width: 30%;
 }
+
+
+.sky{
+    background-color: #A7C7E7;
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+
+.time-display{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 1px #a844b5;
+    margin-top: 5px;
+}
+
 .bottom-area{
     grid-column: 1 ;
     grid-row: 3;
@@ -73,22 +89,19 @@ a:hover{
     background-image: contain;
     width: 100%;
     height: 100%;
-}
-
-.sky{
-    background-color: #A7C7E7;
-    width: 100%;
-    height: 100%;
-   
-}
-.cloud{
- background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.intel.com%2Fcontent%2Fdam%2Fwww%2Fpublic%2Fus%2Fen%2Fimages%2Fpartner-alliance%2Frwd%2Ficons%2Fa1145752-cloud-specialist-icon-rwd.png.rendition.intel.web.864.486.png&imgrefurl=https%3A%2F%2Fwww.intel.com%2Fcontent%2Fwww%2Fus%2Fen%2Fpartner-alliance%2Fmembership%2Fspecialties%2Fcloud%2Foverview.html&tbnid=LtULCavotMo7_M&vet=12ahUKEwi27K_s94f8AhUprXIEHd26B8AQMygBegUIARDfAQ..i&docid=paJjlYQu7wGsGM&w=864&h=486&q=cloud&hl=en&ved=2ahUKEwi27K_s94f8AhUprXIEHd26B8AQMygBegUIARDfAQ);
-
-
-}
-
+    position: relative;
     
-    
+}
+ .flower{
+   background-image: url("https://www.freeiconspng.com/thumbs/sunflower-png/sunflower-png-12.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   bottom: 150px;
+   left: 250px;
+ }   
 
 /* media queries*/
 
