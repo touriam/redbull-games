@@ -23,9 +23,11 @@ const gameContainer = document.querySelector("#container");
 gameContainer.addEventListener('click', function(){
 
     setInterval(function(){
-        seconds -= 1;
+        seconds -- ;
         display.innerText = seconds;
-        console.log("hi");
+        if(display.innerText <=0){
+            display.innerText =('game over');
+        }
     }, 1000);
     
     }
