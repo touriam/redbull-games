@@ -105,6 +105,20 @@ left: 250px;
 #container:hover{
     transform: scale(1.02);
 }
+
+.bee{
+    position: absolute;
+    background-image: url(https://www.paperflodesigns.com/wp-content/uploads/2020/01/How-to-Draw-a-Bee-step-6.png.webp);
+    background-position: cover;
+    height: 200px;
+    width: 200px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.bee:hover{
+    transform: scale(1.02);
+}
 /* media queries*/
 
 @media screen and (max-width: 800px){

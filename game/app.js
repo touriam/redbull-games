@@ -30,7 +30,7 @@ gameContainer.addEventListener('click', function(){
         }
     }, 1000);
     
-    }
+    }, {once: true}
     
 )
     
