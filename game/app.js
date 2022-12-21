@@ -6,9 +6,9 @@ const display = document.querySelector(".time-display");
 const flower = document.querySelector(".flower");
 const gameContainer = document.querySelector("#container");
 const bee = document.querySelector(".bee");
-    let seconds= 30;
+    let seconds = 30;
     let interval = null;
-    let win = ('Flower is Pollinated, you win!')
+    let win = 'Flower is Pollinated, you win!'
 
 
 
@@ -28,25 +28,27 @@ bee.addEventListener('dragstart', function(){
     flower.addEventListener('dragover', function(e){
         e.preventDefault();
         console.log('bee is pollinating me')
-        if(display.innerText <= 0){
-            display.innerText =('Flower is Pollinated, you win!')}
+        if(display.innerText <= 30){
+            display.innerText = win}
         
     })
 
     flower.addEventListener('drop', function(){
-        console.log('im giving the bee some nectar')
+          
+        for( let seconds = 0; seconds <30; seconds--){
         this.className = 'flower';
-        this.append(bee);
-        if(display.innerText <=30){
+        this.append(bee);  
         
-        display.innerText =('Flower is Pollinated, you win!')}
         
-        if (display.innerText = 'Flower is Pollinated, you win!') {
-            
-        }
-        if(display.innertext == 0){
-            display.innerText= 'game over';
-        }
+        if(display.innerText < 30){
+        
+        display.innerText = win;
+        seconds = 0;
+            console.log(win)
+    }
+        
+       
+    }
     } )
 
 
@@ -58,21 +60,10 @@ bee.addEventListener('dragstart', function(){
         
         if(display.innerText <= 0){
             display.innerText =('game over');
-        
-        if(display.innerText < 30){
-            display.innerText =('Flower is Pollinated, you win!')
+        if(display.innerText<=30){
+            display.innerText= (win);
         }
-       
-        if (display.innerText == 'Flower is Pollinated, you win!') {
-            
-        }
-        // if(display.innerText = 'Flower is Pollinated, you win!'){
-
-        //     // if(display.innerText = ('Flower is Pollinated, you win!')){
-            
-        //     display.innerText = 'Flower is Pollinated, you win!'
-            
-        // }
+   
         }
     }, 1000);
     
