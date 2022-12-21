@@ -59,6 +59,7 @@ a:hover{
     margin-top: 10px;
     box-shadow: 2px 1px 2px 1px  rgb(206, 167, 120);
     transition: 1s ease;
+    cursor: pointer;
 }
 .game{
     height: 30%;
@@ -115,6 +116,8 @@ left: 250px;
     background-size: 70px;
     background-repeat: no-repeat;
     z-index: 2;
+    cursor: pointer;
+    
 }
 .bee:hover{
     transform: scale(1.02);
